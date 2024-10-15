@@ -7,7 +7,24 @@ def isprime(p):
 
     # votre code ici
 
-    pass
+    if p < 2:
+        return False
+
+    if p == 2:
+        return False
+
+    # si p a un divisuer autre que 1 et lui meme il est pas premier
+    if p % 2 == 0:
+        return False
+
+    # si p a unn diviseur entre 3 et 
+    for i in range(3, int(sqrt(p)) + 1, 2):
+        if p % i == 0:
+            return False
+        else:
+            return True
+
+        pass
 
 #### Fonction principale
 
